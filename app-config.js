@@ -3,24 +3,24 @@ window.config = {
   extensions: [],
   modes: [],
   showStudyList: true,
+
   dataSources: [
     {
       namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
-      sourceName: 'orthanc',
+      sourceName: 'dicomweb',
       configuration: {
-        friendlyName: 'UNIMALIA Orthanc',
-        name: 'orthanc',
+        friendlyName: 'Orthanc',
+
+        wadoUriRoot: 'https://orthanc-unimalia.onrender.com/wado',
         qidoRoot: 'https://orthanc-unimalia.onrender.com/dicom-web',
         wadoRoot: 'https://orthanc-unimalia.onrender.com/dicom-web',
-        wadoUriRoot: 'https://orthanc-unimalia.onrender.com/wado',
-        supportsWildcard: true,
+
         qidoSupportsIncludeField: true,
+        supportsReject: false,
+        supportsStow: true,
         imageRendering: 'wadors',
         thumbnailRendering: 'wadors',
-        enableStudyLazyLoad: true,
-        omitQuotationForMultipartRequest: true,
       },
     },
   ],
-  defaultDataSourceName: 'orthanc',
 };
