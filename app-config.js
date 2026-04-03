@@ -10,9 +10,9 @@ window.config = {
       sourceName: 'dicomweb',
       configuration: {
         friendlyName: 'UNIMALIA Orthanc',
-        qidoRoot: 'https://orthanc-unimalia.onrender.com/dicom-web',
-        wadoRoot: 'https://orthanc-unimalia.onrender.com/dicom-web',
-        wadoUriRoot: 'https://orthanc-unimalia.onrender.com/wado',
+        qidoRoot: 'https://unimalia-imaging.onrender.com/orthanc/dicom-web',
+        wadoRoot: 'https://unimalia-imaging.onrender.com/orthanc/dicom-web',
+        wadoUriRoot: 'https://unimalia-imaging.onrender.com/orthanc/wado',
         qidoSupportsIncludeField: true,
         supportsReject: false,
         supportsStow: false,
