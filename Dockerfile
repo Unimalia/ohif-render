@@ -1,22 +1,6 @@
 FROM ohif/app:v3.9.2
 
-ENV APP_CONFIG='{
-  "routerBasename": "/",
-  "showStudyList": true,
-  "defaultDataSourceName": "unimalia",
-  "dataSources": [
-    {
-      "namespace": "@ohif/extension-default.dataSourcesModule.dicomweb",
-      "sourceName": "unimalia",
-      "configuration": {
-        "friendlyName": "UNIMALIA Orthanc",
-        "name": "unimalia",
-        "qidoRoot": "https://unimalia-imaging.onrender.com/orthanc/dicom-web",
-        "wadoRoot": "https://unimalia-imaging.onrender.com/orthanc/dicom-web",
-        "wadoUriRoot": "https://unimalia-imaging.onrender.com/orthanc/wado",
-        "imageRendering": "wadors",
-        "thumbnailRendering": "wadors"
-      }
-    }
-  ]
-}'
+USER root
+
+COPY app-config.js /usr/share/nginx/html/app-config.js
+COPY index.html /usr/share/nginx/html/index.html
