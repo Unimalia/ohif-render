@@ -1,13 +1,11 @@
 window.config = {
   routerBasename: '/',
-  extensions: [],
-  modes: [],
   showStudyList: true,
-  defaultDataSourceName: 'dicomweb',
+  defaultDataSourceName: 'unimalia',
   dataSources: [
     {
       namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
-      sourceName: 'dicomweb',
+      sourceName: 'unimalia',
       configuration: {
         friendlyName: 'UNIMALIA Orthanc',
         qidoRoot: 'https://unimalia-imaging.onrender.com/orthanc/dicom-web',
